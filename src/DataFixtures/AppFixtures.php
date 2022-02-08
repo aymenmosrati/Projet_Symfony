@@ -15,15 +15,13 @@ class AppFixtures extends Fixture
     {
         // $product = new Product();
         // $manager->persist($product);
-
-              
+             
         $user = new User();
         $user->setLastName("Aymen");
         $user->setEmail("aymen@gmail.com");
         $user->setPassword('aymen') ;
         $user->setRoles(['ROLE_ADMIN']);
         $manager->persist($user);
-
         $manager->flush();
     }
 }
